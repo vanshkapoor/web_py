@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>
+</head>
+<body>
+	<h1>Span detector for HTML</h1>
+
+	<p>Enter your comment here</p>
+
+<form action="{{ url_for('predict')}}" method="POST">
+	<textarea name="comment" rows="4" cols="50"></textarea>
+	<br/>
+	<input type="submit" value="predict">
+</form>
+
+</body>
+</html>
