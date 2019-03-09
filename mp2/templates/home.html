@@ -1,0 +1,21 @@
+{% extends "bootstrap/base.html" %}
+{% block content %}
+
+
+<div class="container">
+	<div class="jumbotron">
+		<h1>Gender Classifier</h1>
+	</div>
+</div>
+
+<div class="container">
+
+	<form method='POST' action="{{ url_for('predict')}}">
+		<input type="text" name="name">
+		<button type="submit" class="btn btn-primary">Predict</button>
+	</form>
+	
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "bootstrap/base.html" %}
+{% block content %}
+
+<div class="container">
+	<div class="jumbotron">
+		<h1>Gender classifier</h1>
+	</div>
+</div>
+
+<div class="card text-center">
+	<div class="card-body">
+		<p class="card-title">{{name}}</p>	
+		<p class="card-subtitle mb-2 text-muted">
+			{% if prediction == 0 %}
+				She is a Female 
+			{% elif prediction == 1 %}
+				He is a Male
+			{% endif %}
+		 </p>	
+		 <a href="/" class="btn btn-outline-primary">Lets do it again</a>
+	</div>
+
+	
+</div>
+
+
+{% endblock %}
